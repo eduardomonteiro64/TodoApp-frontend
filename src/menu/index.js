@@ -8,14 +8,13 @@ export default function MenuSelect() {
     });
 
     const handleClick = e => {
-        console.log('click ', e);
         setState({ ...state, current: e.key });
     };
 
     return (
         <div>
             <Menu onClick={() => handleClick} selectedKeys={[state.current]} mode="horizontal" theme="dark">
-                <Menu.Item key="todo" a>
+                <Menu.Item key="todo">
                     <a href="/todo">
                         Inserir Todo
                     </a>
